@@ -1,0 +1,196 @@
+#mainMenuLayout {
+    -fx-background-image: url("../pics/menuBackground.jpg");
+}
+
+#signInMenuLayout {
+    -fx-background-image: url("../pics/menuBackground.jpg");
+}
+
+#signUpMenuLayout {
+    -fx-background-image: url("../pics/menuBackground.jpg");
+}
+
+#gameMenuLayout {
+    -fx-background-image: url("../pics/menuBackground.jpg");
+}
+
+#scoreBoardLayout {
+    -fx-background-image: url("../pics/menuBackground.jpg");
+}
+
+#settingMenuLayout {
+    -fx-background-image: url("../pics/menuBackground.jpg");
+}
+
+.mainMenuButtons {
+    -fx-background: linear-gradient(to bottom, #c123de 5%, #a20dbd 100%);
+    -fx-background-color:#c123de;
+    -fx-border-radius:6px;
+    -fx-text-alignment: center;
+    -fx-border:1px solid #a511c0;
+    -fx-display: inline-block;
+    -fx-cursor: pointer;
+    -fx-color:#333333;
+    -fx-font-family:Georgia;
+    -fx-font-size:16px;
+    -fx-font-style:italic;
+}
+
+.mainMenuButtons:hover {
+    -fx-background:linear-gradient(to bottom, #a20dbd 5%, #c123de 100%);
+    -fx-background-color:#a20dbd;
+}
+
+.signUpMenuButtons {
+    -fx-background: linear-gradient(to bottom, #89c403 5%, #77a809 100%);
+    -fx-background-color:#89c403;
+    -fx-border-radius:6px;
+    -fx-border:1px solid #74b807;
+    -fx-display: inline-block;
+    -fx-cursor: pointer;
+    -fx-color:#333333;
+    -fx-font-family:Georgia;
+    -fx-font-size:15px;
+    -fx-font-weight:bold;
+    -fx-font-style:italic;
+}
+
+.signUpMenuButtons:hover {
+    -fx-background:linear-gradient(to bottom, #77a809 5%, #89c403 100%);
+    -fx-background-color:#77a809;
+}
+
+#signUpMainLable {
+    -fx-font-family:Georgia;
+    -fx-font-size:35px;
+    -fx-font-weight:bold;
+    -fx-font-style:italic;
+}
+
+#signInMainLable {
+    -fx-font-family:Georgia;
+    -fx-font-size:35px;
+    -fx-font-weight:bold;
+    -fx-font-style:italic;
+}
+
+#gameMenuMainLable {
+    -fx-font-family:Georgia;
+    -fx-font-size:35px;
+    -fx-font-weight:bold;
+    -fx-font-style:italic;
+}
+
+#scoreboardMainLabel {
+    -fx-font-family:Georgia;
+    -fx-font-size:25px;
+    -fx-font-weight:bold;
+    -fx-font-style:italic;
+}
+
+#settingMenuMainLabel {
+    -fx-font-family:Georgia;
+    -fx-font-size:35px;
+    -fx-font-weight:bold;
+    -fx-font-style:italic;
+}
+
+.gameMenuUserLables {
+    -fx-font-family:Georgia;
+    -fx-font-size:20px;
+    -fx-font-weight:bold;
+    -fx-font-style:italic;
+}
+
+.signInMenuButtons {
+    -fx-background: linear-gradient(to bottom, #ffec64 5%, #ffab23 100%);
+    -fx-background-color:#ffec64;
+    -fx-border-radius:6px;
+    -fx-border:1px solid #ffaa22;
+    -fx-display: inline-block;
+    -fx-cursor: pointer;
+    -fx-color:#ffffff;
+    -fx-font-family:Georgia;
+    -fx-font-size:15px;
+    -fx-font-weight:bold;
+    -fx-font-style:italic;
+}
+
+.signInMenuButtons:hover {
+    -fx-background:linear-gradient(to bottom, #ffab23 5%, #ffec64 100%);
+    -fx-background-color:#ffab23;
+}
+
+.gameMenuButtons {
+    -fx-background: linear-gradient(to bottom, #f24537 5%, #c62d1f 100%);
+    -fx-background-color:#f24537;
+    -fx-border-radius:6px;
+    -fx-border:1px solid #d02718;
+    -fx-display: inline-block;
+    -fx-cursor: pointer;
+    -fx-color:#222222;
+    -fx-font-family:Georgia;
+    -fx-font-size:15px;
+    -fx-font-weight:bold;
+    -fx-font-style:italic;
+}
+
+.gameMenuButtons:hover {
+    -fx-background:linear-gradient(to bottom, #c62d1f 5%, #f24537 100%);
+    -fx-background-color:#c62d1f;
+}
+
+.scoreboardButtons {
+    -fx-background: linear-gradient(to bottom, #fc8d83 5%, #e4685d 100%);
+    -fx-background-color:#fc8d83;
+    -fx-border-radius:6px;
+    -fx-border:1px solid #d83526;
+    -fx-display: inline-block;
+    -fx-cursor: pointer;
+    -fx-color:#999999;
+    -fx-font-family:Georgia;
+    -fx-font-size:15px;
+    -fx-font-weight:bold;
+    -fx-font-style:italic;
+}
+
+.scoreboardButtons:hover {
+    -fx-background:linear-gradient(to bottom, #e4685d 5%, #fc8d83 100%);
+    -fx-background-color:#e4685d;
+}
+
+.settingLabels {
+    -fx-font-family:Georgia;
+    -fx-font-size:20px;
+    -fx-font-weight:bold;
+    -fx-font-style:italic;
+}
+
+.settingButtons {
+    -fx-background: linear-gradient(to bottom, #ff5bb0 5%, #ef027d 100%);
+    -fx-background-color:#ff5bb0;
+    -fx-border-radius:6px;
+    -fx-border:1px solid #ee1eb5;
+    -fx-display: inline-block;
+    -fx-cursor: pointer;
+    -fx-color:#111111;
+    -fx-font-family:Georgia;
+    -fx-font-size:15px;
+    -fx-font-weight:bold;
+    -fx-font-style:italic;
+    -fx-text-shadow: 0px 1px 0px #c70067;
+}
+
+.settingButtons:hover {
+    -fx-background:linear-gradient(to bottom, #ef027d 5%, #ff5bb0 100%);
+    -fx-background-color:#ef027d;
+}
+
+
+
+
+
+
+
+
+

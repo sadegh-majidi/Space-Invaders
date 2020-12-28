@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane id="gameMenuLayout" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" stylesheets="@../../../../../stylesheets/menuStyles.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controller.GameMenuController">
+   <top>
+      <HBox BorderPane.alignment="CENTER">
+         <children>
+            <MenuBar HBox.hgrow="ALWAYS">
+              <menus>
+                <Menu mnemonicParsing="false" text="File">
+                  <items>
+                    <MenuItem mnemonicParsing="false" onAction="#exitFromAppAndSave" text="Close" />
+                  </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Edit">
+                  <items>
+                    <MenuItem mnemonicParsing="false" text="Delete" />
+                  </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Help">
+                  <items>
+                    <MenuItem mnemonicParsing="false" onAction="#showAbout" text="About" />
+                  </items>
+                </Menu>
+              </menus>
+            </MenuBar>
+         </children>
+      </HBox>
+   </top>
+   <center>
+      <VBox alignment="CENTER" BorderPane.alignment="CENTER">
+         <children>
+            <Label id="gameMenuMainLable" stylesheets="@../../../../../stylesheets/menuStyles.css" text="Space Invaders" textFill="#ff1616" />
+            <HBox>
+               <children>
+                  <Label prefHeight="34.0" prefWidth="85.0" styleClass="gameMenuUserLables" stylesheets="@../../../../../stylesheets/menuStyles.css" text="User:" textAlignment="CENTER" textFill="#dfff0f">
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin></Label>
+                  <Label fx:id="gameMenuUsername" prefHeight="42.0" prefWidth="87.0" styleClass="gameMenuUserLables" stylesheets="@../../../../../stylesheets/menuStyles.css" textFill="#dfff0f">
+                     <HBox.margin>
+                        <Insets left="8.0" />
+                     </HBox.margin></Label>
+                  <Region prefHeight="40.0" prefWidth="190.0" HBox.hgrow="ALWAYS" />
+                  <Label prefHeight="30.0" prefWidth="109.0" styleClass="gameMenuUserLables" stylesheets="@../../../../../stylesheets/menuStyles.css" text="Score:" textFill="#dfff0f">
+                     <HBox.margin>
+                        <Insets left="20.0" />
+                     </HBox.margin></Label>
+                  <Label fx:id="gameMenuScore" prefHeight="34.0" prefWidth="68.0" styleClass="gameMenuUserLables" stylesheets="@../../../../../stylesheets/menuStyles.css" textFill="#dfff0f">
+                     <HBox.margin>
+                        <Insets left="8.0" right="10.0" />
+                     </HBox.margin></Label>
+               </children>
+            </HBox>
+            <GridPane prefHeight="189.0" prefWidth="600.0">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints maxHeight="92.0" minHeight="10.0" prefHeight="86.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="62.0" minHeight="5.0" prefHeight="17.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="104.0" minHeight="10.0" prefHeight="92.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Button mnemonicParsing="false" onAction="#gameMenuPlayButtonPressed" prefHeight="55.0" prefWidth="150.0" styleClass="gameMenuButtons" stylesheets="@../../../../../stylesheets/menuStyles.css" text="Play" GridPane.halignment="RIGHT" GridPane.valignment="CENTER">
+                     <GridPane.margin>
+                        <Insets right="15.0" />
+                     </GridPane.margin>
+                  </Button>
+                  <Button mnemonicParsing="false" onAction="#gameMenuSettingButtonPressed" prefHeight="55.0" prefWidth="150.0" styleClass="gameMenuButtons" stylesheets="@../../../../../stylesheets/menuStyles.css" text="Setting" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.valignment="CENTER">
+                     <GridPane.margin>
+                        <Insets left="15.0" />
+                     </GridPane.margin>
+                  </Button>
+                  <Button mnemonicParsing="false" onAction="#gameMenuScoreBoardButtonPressed" prefHeight="55.0" prefWidth="150.0" styleClass="gameMenuButtons" stylesheets="@../../../../../stylesheets/menuStyles.css" text="ScoreBoard" GridPane.halignment="RIGHT" GridPane.rowIndex="2" GridPane.valignment="CENTER">
+                     <GridPane.margin>
+                        <Insets right="15.0" />
+                     </GridPane.margin>
+                  </Button>
+                  <Button mnemonicParsing="false" onAction="#gameMenuLogoutButtonPressed" prefHeight="55.0" prefWidth="150.0" styleClass="gameMenuButtons" stylesheets="@../../../../../stylesheets/menuStyles.css" text="Logout" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.rowIndex="2" GridPane.valignment="CENTER">
+                     <GridPane.margin>
+                        <Insets left="15.0" />
+                     </GridPane.margin>
+                  </Button>
+               </children>
+            </GridPane>
+         </children>
+      </VBox>
+   </center>
+</BorderPane>

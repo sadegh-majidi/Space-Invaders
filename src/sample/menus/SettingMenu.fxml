@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane id="settingMenuLayout" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" stylesheets="@../../../../../stylesheets/menuStyles.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controller.SettingMenuControllers">
+   <top>
+      <HBox BorderPane.alignment="CENTER">
+         <children>
+            <MenuBar HBox.hgrow="ALWAYS">
+              <menus>
+                <Menu mnemonicParsing="false" text="File">
+                  <items>
+                    <MenuItem mnemonicParsing="false" onAction="#exitFromAppAndSave" text="Close" />
+                  </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Edit">
+                  <items>
+                    <MenuItem mnemonicParsing="false" text="Delete" />
+                  </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Help">
+                  <items>
+                    <MenuItem mnemonicParsing="false" onAction="#showAbout" text="About" />
+                  </items>
+                </Menu>
+              </menus>
+            </MenuBar>
+         </children>
+      </HBox>
+   </top>
+   <center>
+      <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label id="settingMenuMainLabel" alignment="CENTER" prefHeight="45.0" prefWidth="244.0" stylesheets="@../../../../../stylesheets/menuStyles.css" text="Setting Menu" textFill="#ff1616" />
+            <HBox alignment="CENTER">
+               <children>
+                  <Label prefHeight="64.0" prefWidth="190.0" styleClass="settingLabels" stylesheets="@../../../../../stylesheets/menuStyles.css" text="New Username :" textFill="#f2ff03" />
+                  <TextField fx:id="changeUsernameField" prefHeight="25.0" prefWidth="188.0" promptText="new username" />
+                  <Button mnemonicParsing="false" onAction="#settingMenuChangeUsernameButtonPressed" prefHeight="25.0" prefWidth="84.0" styleClass="settingButtons" stylesheets="@../../../../../stylesheets/menuStyles.css" text="Change">
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                  </Button>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER">
+               <children>
+                  <Label prefHeight="64.0" prefWidth="190.0" styleClass="settingLabels" stylesheets="@../../../../../stylesheets/menuStyles.css" text="New Password :" textFill="#f2ff03" />
+                  <PasswordField fx:id="changePasswordField" prefHeight="25.0" prefWidth="188.0" promptText="new password" />
+                  <Button mnemonicParsing="false" onAction="#settingMenuChangePasswordButtonPressed" prefHeight="25.0" prefWidth="84.0" styleClass="settingButtons" stylesheets="@../../../../../stylesheets/menuStyles.css" text="Change">
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                  </Button>
+               </children>
+            </HBox>
+            <Button mnemonicParsing="false" onAction="#settingMenuBackButtonPressed" prefHeight="46.0" prefWidth="85.0" styleClass="settingButtons" stylesheets="@../../../../../stylesheets/menuStyles.css" text="Back" />
+         </children>
+      </VBox>
+   </center>
+</BorderPane>
